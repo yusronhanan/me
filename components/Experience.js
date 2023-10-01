@@ -18,7 +18,7 @@ export const Experience = ({
       </Text>
     </GridItem>
     <GridItem colSpan={{ base: 4, sm: 3 }}>
-      {image && <Image width="36px" mb={4} src={image} alt={title} />}
+      {image && <Image width="80px" mb={4} src={image} alt={title} />}
       <Heading
         as={href ? 'a' : 'h3'}
         href={href}

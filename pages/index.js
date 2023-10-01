@@ -98,13 +98,18 @@ export default function Home() {
             side=""
             title="I'm open for freelance work."
             desc="I'm passionate about building a product that can help people to solve their problems."
-            stack="Laravel • Odoo • Next.js • Go • Find out more by contacting me"
+            stack="Laravel • Odoo • Next.js • Go • and many more..."
           />
 
           <Heading as="h2" size="md" mt={14} mb={10}>
-            Links
+            Find out more by contacting me:
           </Heading>
-
+          <Experience
+            side="Email"
+            title="yusronzain@gmail.com"
+            href="mailto:yusronzain@gmail.com"
+            mb={4}
+          />
           <Experience
             side="Github"
             title="@yusronhanan"
@@ -115,6 +120,12 @@ export default function Home() {
             side="Medium"
             title="@yusronzain"
             href="https://medium.com/@yusronzain"
+            mb={4}
+          />
+          <Experience
+            side="Linkedin"
+            title="@yusronhanan"
+            href="https://www.linkedin.com/in/yusronhanan/"
             mb={4}
           />
         </Box>

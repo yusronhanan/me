@@ -30,7 +30,7 @@ export const Experience = ({
         {href && (
           <Image
             ml={2}
-            src="/arrow-link.svg"
+            src="./arrow-link.svg"
             alt={`link to ${title}`}
             transform="translateY(1px)"
           />

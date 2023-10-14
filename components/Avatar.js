@@ -50,7 +50,7 @@ export const Avatar = () => {
                 maxWidth="none"
                 position="absolute"
                 width={{ base: 'full', lg: '135%' }}
-                src="/blurs.png"
+                src="./blurs.png"
                 role="presentation"
                 animation={`${spin} infinite 5s linear`}
               />
@@ -59,7 +59,7 @@ export const Avatar = () => {
           <Image
             borderRadius="full"
             width={{ base: '80%', lg: 'full' }}
-            src="/profile.png"
+            src="./profile.png"
             alt="Yusron Hanan"
           />
         </Flex>

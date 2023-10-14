@@ -31,7 +31,7 @@ export default function Document() {
         <meta name="og:url" content="https://yusronhanan.dev/" />
         <meta name="og:site_name" content="YusronHanan" />
         <meta name="og:type" content="website" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="./favicon.png" />
       </Head>
       <body>
         <Main />

@@ -94,7 +94,7 @@ export default function Home() {
           </Heading>
 
           <Experience
-            image="/freelancer-profile.png"
+            image="./freelancer-profile.png"
             side=""
             title="I'm open for freelance work."
             desc="I'm passionate about building a product that can help people to solve their problems."

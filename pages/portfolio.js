@@ -59,7 +59,7 @@ export default function Portfolio() {
           <Experience
               side=""
               title="💼 My Work Experiences"
-              href="/"
+              href={typeof window !== 'undefined' ? `${window.location.pathname}/` : '/me/'}
               mb={4}
           />
         </Box>

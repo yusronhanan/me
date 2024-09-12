@@ -59,7 +59,7 @@ export default function Home() {
           <Experience
               side=""
               title="💼 My Portfolio"
-              href="/portfolio"
+              href={typeof window !== 'undefined' ? `${window.location.pathname}/portfolio` : '/me/portfolio'}
               mb={4}
           />
         </Box>

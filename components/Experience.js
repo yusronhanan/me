@@ -22,6 +22,7 @@ export const Experience = ({
       <Heading
         as={href ? 'a' : 'h3'}
         href={href}
+        target="_blank"
         size="md"
         display="flex"
         alignItems="center"

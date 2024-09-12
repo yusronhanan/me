@@ -2,6 +2,8 @@ import { Link, Box, Text, Heading, GridItem } from '@chakra-ui/react';
 import Head from 'next/head';
 import { Grid } from '../components/Grid';
 import { Experience } from '../components/Experience';
+import { ContactList } from '../components/ContactList';
+import { SideHustleSection } from '../components/SideHustleSection';
 import Cursor from '../components/Cursor';
 import { Avatar } from '../components/Avatar';
 
@@ -28,7 +30,7 @@ export default function Home() {
               <Heading as="h1" size="lg">
                 Yusron Hanan
               </Heading>
-              <Text>Software Engineer-focused Back End</Text>
+              <Text>Software Engineer-focused Back End at <Link color="green" href="https://www.gojek.com/en-id" target="_blank">Gojek</Link></Text>
               <Link
                 color="white"
                 opacity={0.5}
@@ -49,22 +51,36 @@ export default function Home() {
             programming. I have 4-5 years of experience in the professional
             area. I helped my employer to get their product to work well and
             sustain. My portfolios are used in various industries, such as
-            EduTech, Chat Platform, Telemedicine, and Finance. I'm also actively
+            EduTech, Chat Platform, Telemedicine, Finance, and On Demand Service Food Delivery. I'm also actively
             writing on my Medium platform, with 100+ claps and continuously
             growing.
           </Text>
+
+          <Experience
+              side=""
+              title="💼 My Portfolio"
+              href="/portfolio"
+              mb={4}
+          />
         </Box>
         <Box mb={14}>
+
           <Heading as="h2" size="md" mb={10}>
             Work Experience
           </Heading>
-
+          <Experience
+            href="https://gojek.com/en-id"
+            side="May 2024 - Present"
+            title="Software Engineer -focused Back End - Gojek"
+            desc="Gojek is a Super App On Demand Service company that provides a variety of services from transportation, payment, food delivery, and many more. I'm assigned to the GoFood team, responsible for building and maintaining the products especially for food delivery services, such as the merchant, catalog management, stock management, order management, and delivery services."
+            stack="Go • OpenTelemetry • gRPC • Kafka • Python • Redis • PostgreSQL • Docker • Database Design"
+          />
           <Experience
             href="https://reku.id/"
-            side="Oct 2022 - present"
+            side="Oct 2022 - May 2024"
             title="Software Engineer -focused Back End - Reku"
-            desc="Building the leading Indonesian crypto exchange. Joining the team as a back end engineer, I'm responsible for building the core product, such as the trading engine, gamification features, notification system, etc."
-            stack="Go • OpenTelemetry • gRPC • Kafka • PHP • Redis • MySQL • Docker • Database Design"
+            desc="Building the leading Indonesian crypto exchange. Joining the team as a back end engineer, I'm responsible for building the core product, such as the trading engine, gamification features, notification services, etc."
+            stack="Go • OpenTelemetry • gRPC • Kafka • PHP • Redis • PostgreSQL • Docker • Database Design"
           />
           <Experience
             href="https://9skyventures.com/"
@@ -75,7 +91,7 @@ export default function Home() {
           />
           <Experience
             side="Oct 2020 – Dec 2021"
-            href="https://rockliffe.com/"
+            href="https://www.linkedin.com/company/rockliffe/"
             title="Software Developer -focused Front End – Rockliffe"
             desc="I took charge of building Rockliffe’s product in desktop version, AstraChat. It is a Jabber/XMPP instant messaging application that allows organizations to own their private messaging servers in the cloud.
             "
@@ -89,45 +105,9 @@ export default function Home() {
             stack="Svelte • FaunaDB • Express.js"
           />
 
-          <Heading as="h2" size="md" mt={14} mb={10}>
-            Hey, I am also doing side hustle...
-          </Heading>
+          <SideHustleSection/>
 
-          <Experience
-            image="./freelancer-profile.png"
-            side=""
-            title="I'm open for freelance work."
-            desc="I'm passionate about building a product that can help people to solve their problems."
-            stack="Laravel • Odoo • Next.js • Go • and many more..."
-          />
-
-          <Heading as="h2" size="md" mt={14} mb={10}>
-            Find out more by contacting me:
-          </Heading>
-          <Experience
-            side="Email"
-            title="yusronzain@gmail.com"
-            href="mailto:yusronzain@gmail.com"
-            mb={4}
-          />
-          <Experience
-            side="Github"
-            title="@yusronhanan"
-            href="https://github.com/yusronhanan"
-            mb={4}
-          />
-          <Experience
-            side="Medium"
-            title="@yusronzain"
-            href="https://medium.com/@yusronzain"
-            mb={4}
-          />
-          <Experience
-            side="Linkedin"
-            title="@yusronhanan"
-            href="https://www.linkedin.com/in/yusronhanan/"
-            mb={4}
-          />
+          <ContactList/>
         </Box>
       </Box>
     </>
